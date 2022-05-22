@@ -81,6 +81,13 @@ clear.addEventListener("click", () => {
         secondNumber = parseInt(number.slice(0, -1)) || 0;
         update();
     }
+
+    if (firstNumber && !operator) {
+        const number = firstNumber.toString();
+
+        firstNumber = parseInt(number.slice(0, -1)) || 0;
+        update();
+    }
 })
 
 equals.addEventListener("click", () => {
